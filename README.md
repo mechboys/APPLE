@@ -27,6 +27,33 @@
     nav a:hover {
       text-decoration: underline;
     }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background: #444;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    .dropdown-content a {
+      color: white;
+      padding: 10px;
+      text-decoration: none;
+      display: block;
+    }
+    .dropdown-content a:hover {
+      background: #555;
+    }
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
     /* Hero section */
     .hero {
       background: linear-gradient(to right, #4facfe, #00f2fe);
@@ -38,6 +65,7 @@
       font-size: 2.5rem;
       margin-bottom: 10px;
     }
+
     /* Content cards */
     .container {
       display: flex;
@@ -57,31 +85,7 @@
     .card h3 {
       margin-top: 0;
     }
-    /* Semester section */
-    .semester-section {
-      padding: 20px;
-      text-align: center;
-    }
-    .semester-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      margin-top: 20px;
-    }
-    .semester-links a {
-      display: inline-block;
-      background: #4facfe;
-      color: white;
-      padding: 12px 20px;
-      margin: 8px;
-      border-radius: 8px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
-    }
-    .semester-links a:hover {
-      background: #00c6ff;
-    }
+
     /* Footer */
     footer {
       background: #333;
@@ -98,7 +102,22 @@
     <div><strong>My Website</strong></div>
     <div>
       <a href="#">Home</a>
-      <a href="#">About</a>
+
+      <!-- Dropdown for Semesters -->
+      <div class="dropdown">
+        <a href="#">Semesters ▼</a>
+        <div class="dropdown-content">
+          <a href="link1.html">1st Semester</a>
+          <a href="link2.html">2nd Semester</a>
+          <a href="link3.html">3rd Semester</a>
+          <a href="link4.html">4th Semester</a>
+          <a href="link5.html">5th Semester</a>
+          <a href="link6.html">6th Semester</a>
+          <a href="link7.html">7th Semester</a>
+          <a href="link8.html">8th Semester</a>
+        </div>
+      </div>
+
       <a href="#">Contact</a>
     </div>
   </nav>
@@ -124,22 +143,6 @@
       <p>You can add your email or links to social media here.</p>
     </div>
   </div>
-
-  <!-- Semester Section -->
-  <section class="semester-section">
-    <h2>Semester Notes</h2>
-    <p>Click below to access your semester resources:</p>
-    <div class="semester-links">
-      <a href="LINK1" target="_blank">1st Semester</a>
-      <a href="LINK2" target="_blank">2nd Semester</a>
-      <a href="LINK3" target="_blank">3rd Semester</a>
-      <a href="LINK4" target="_blank">4th Semester</a>
-      <a href="LINK5" target="_blank">5th Semester</a>
-      <a href="LINK6" target="_blank">6th Semester</a>
-      <a href="LINK7" target="_blank">7th Semester</a>
-      <a href="LINK8" target="_blank">8th Semester</a>
-    </div>
-  </section>
 
   <!-- Footer -->
   <footer>
