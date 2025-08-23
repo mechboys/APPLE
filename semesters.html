@@ -3,47 +3,121 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semesters</title>
+  <title>Semesters | My Website</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
-      line-height: 1.6;
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #fff;
+      color: #111;
     }
-    h1 {
-      text-align: center;
+
+    /* Navbar */
+    nav {
+      background: #fff;
+      padding: 15px 50px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #ddd;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
     }
-    ul {
-      list-style: none;
-      padding: 0;
-    }
-    li {
-      margin: 10px 0;
-      text-align: center;
-    }
-    a {
+    nav a {
       text-decoration: none;
-      color: blue;
-      font-size: 18px;
+      color: #111;
+      margin-left: 25px;
+      font-size: 14px;
+      transition: opacity 0.3s;
     }
-    a:hover {
-      text-decoration: underline;
+    nav a:hover {
+      opacity: 0.6;
+    }
+
+    /* Page Title */
+    .header {
+      text-align: center;
+      padding: 60px 20px 30px;
+    }
+    .header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+    .header p {
+      font-size: 1.1rem;
+      color: #666;
+    }
+
+    /* Semester Links */
+    .semester-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+      padding: 40px 10%;
+    }
+    .semester {
+      background: #f5f5f7;
+      padding: 30px;
+      text-align: center;
+      border-radius: 15px;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .semester:hover {
+      transform: translateY(-5px);
+      background: #e9e9eb;
+    }
+    .semester a {
+      text-decoration: none;
+      color: #111;
+      font-size: 1.2rem;
+      font-weight: 500;
+    }
+
+    /* Footer */
+    footer {
+      background: #f5f5f7;
+      padding: 20px;
+      text-align: center;
+      font-size: 14px;
+      color: #666;
     }
   </style>
 </head>
 <body>
-  <h1>All Semesters</h1>
-  <ul>
-    <li><a href="sem1.html">1st Semester</a></li>
-    <li><a href="sem2.html">2nd Semester</a></li>
-    <li><a href="sem3.html">3rd Semester</a></li>
-    <li><a href="sem4.html">4th Semester</a></li>
-    <li><a href="sem5.html">5th Semester</a></li>
-    <li><a href="sem6.html">6th Semester</a></li>
-    <li><a href="sem7.html">7th Semester</a></li>
-    <li><a href="sem8.html">8th Semester</a></li>
-  </ul>
 
-  <p style="text-align:center;"><a href="index.html">⬅ Back to Home</a></p>
+  <!-- Navbar -->
+  <nav>
+    <div><strong>MyWebsite</strong></div>
+    <div>
+      <a href="index.html">Home</a>
+      <a href="semesters.html">Semesters</a>
+      <a href="#">Contact</a>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <div class="header">
+    <h1>All Semesters</h1>
+    <p>Select a semester below to view details.</p>
+  </div>
+
+  <!-- Semester Links -->
+  <div class="semester-list">
+    <div class="semester"><a href="https://example.com/sem1">1st Semester</a></div>
+    <div class="semester"><a href="https://example.com/sem2">2nd Semester</a></div>
+    <div class="semester"><a href="https://example.com/sem3">3rd Semester</a></div>
+    <div class="semester"><a href="https://example.com/sem4">4th Semester</a></div>
+    <div class="semester"><a href="https://example.com/sem5">5th Semester</a></div>
+    <div class="semester"><a href="https://example.com/sem6">6th Semester</a></div>
+    <div class="semester"><a href="https://example.com/sem7">7th Semester</a></div>
+    <div class="semester"><a href="https://example.com/sem8">8th Semester</a></div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 MyWebsite | Designed in Apple Style</p>
+  </footer>
+
 </body>
 </html>
