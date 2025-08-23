@@ -1,9 +1,9 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Semesters | My Website</title>
+  <title>My Website</title>
   <style>
     body {
       margin: 0;
@@ -35,43 +35,54 @@
       opacity: 0.6;
     }
 
-    /* Page Title */
-    .header {
+    /* Hero Section */
+    .hero {
       text-align: center;
-      padding: 60px 20px 30px;
+      padding: 100px 20px;
     }
-    .header h1 {
-      font-size: 2.5rem;
-      margin-bottom: 10px;
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 15px;
+      font-weight: 600;
     }
-    .header p {
-      font-size: 1.1rem;
-      color: #666;
+    .hero p {
+      font-size: 1.2rem;
+      color: #555;
+      margin-bottom: 30px;
+    }
+    .hero a {
+      display: inline-block;
+      background: #0071e3;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 25px;
+      font-size: 16px;
+      text-decoration: none;
+      transition: background 0.3s;
+    }
+    .hero a:hover {
+      background: #005bb5;
     }
 
-    /* Semester Links */
-    .semester-list {
+    /* Feature Section */
+    .feature {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-      padding: 40px 10%;
+      grid-template-columns: 1fr 1fr;
+      align-items: center;
+      padding: 80px 10%;
+      gap: 40px;
     }
-    .semester {
-      background: #f5f5f7;
-      padding: 30px;
-      text-align: center;
-      border-radius: 15px;
-      transition: transform 0.3s, background 0.3s;
+    .feature img {
+      width: 100%;
+      border-radius: 20px;
     }
-    .semester:hover {
-      transform: translateY(-5px);
-      background: #e9e9eb;
+    .feature h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
     }
-    .semester a {
-      text-decoration: none;
-      color: #111;
-      font-size: 1.2rem;
-      font-weight: 500;
+    .feature p {
+      font-size: 1.1rem;
+      color: #444;
     }
 
     /* Footer */
@@ -81,6 +92,13 @@
       text-align: center;
       font-size: 14px;
       color: #666;
+    }
+
+    @media (max-width: 768px) {
+      .feature {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
     }
   </style>
 </head>
@@ -96,23 +114,24 @@
     </div>
   </nav>
 
-  <!-- Header -->
-  <div class="header">
-    <h1>All Semesters</h1>
-    <p>Select a semester below to view details.</p>
-  </div>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to My Website</h1>
+    <p>Simple. Clean. Inspired by Apple.</p>
+    <a href="semesters.html">Explore Semesters</a>
+  </section>
 
-  <!-- Semester Links -->
-  <div class="semester-list">
-    <div class="semester"><a href="https://example.com/sem1">1st Semester</a></div>
-    <div class="semester"><a href="https://example.com/sem2">2nd Semester</a></div>
-    <div class="semester"><a href="https://example.com/sem3">3rd Semester</a></div>
-    <div class="semester"><a href="https://example.com/sem4">4th Semester</a></div>
-    <div class="semester"><a href="https://example.com/sem5">5th Semester</a></div>
-    <div class="semester"><a href="https://example.com/sem6">6th Semester</a></div>
-    <div class="semester"><a href="https://example.com/sem7">7th Semester</a></div>
-    <div class="semester"><a href="https://example.com/sem8">8th Semester</a></div>
-  </div>
+  <!-- Feature Section -->
+  <section class="feature">
+    <div>
+      <h2>Modern Design</h2>
+      <p>
+        This website is built with a minimal and elegant style, 
+        focusing on clarity and simplicity — just like Apple’s design philosophy.
+      </p>
+    </div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Style">
+  </section>
 
   <!-- Footer -->
   <footer>
