@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -18,14 +18,8 @@
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
     nav .logo {
-      display: flex;
-      align-items: center;
-      gap: 10px;
       font-weight: bold;
       font-size: 20px;
-    }
-    nav img {
-      height: 30px;
     }
     nav a {
       margin-left: 20px;
@@ -55,11 +49,8 @@
 <body>
 
   <nav>
-    <!-- Logo + Website Name -->
-    <div class="logo">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg" alt="Apple Logo">
-      MyWebsite
-    </div>
+    <!-- Website Name -->
+    <div class="logo">MyWebsite</div>
 
     <!-- Navigation Links -->
     <div>
