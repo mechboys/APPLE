@@ -20,13 +20,12 @@
     nav .logo {
       display: flex;
       align-items: center;
-      gap: 8px; /* space between logo & text */
+      gap: 10px;
       font-weight: bold;
       font-size: 20px;
     }
     nav img {
-      height: 18px; /* smaller apple logo */
-      width: auto;
+      height: 30px;
     }
     nav a {
       margin-left: 20px;
