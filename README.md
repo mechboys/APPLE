@@ -108,7 +108,8 @@
     </div>
     <div>
       <a href="index.html">Home</a>
-      <a href="semesters.html">RESULTS</a>
+      <a href="college.html">College</a>
+      <a href="semesters.html">Results</a>
     </div>
   </nav>
 
