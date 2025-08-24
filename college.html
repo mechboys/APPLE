@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My College Hub</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .header {
+            background-color: #e0e0e0;
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+        .nav-menu {
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            background-color: #f9f9f9;
+            border: 1px solid #ccc;
+        }
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+        }
+        .quick-access, .exam-results, .academic-resources {
+            margin: 20px;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .quick-access h2, .exam-results h2, .academic-resources h2 {
+            text-align: center;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            text-align: center;
+        }
+        .grid-item {
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>My College Hub</h1>
+    </div>
+    <div class="nav-menu">
+        <a href="#home">Home</a>
+        <a href="#exam-results">Exam Results</a>
+        <a href="#academic-resources">Academic Resources</a>
+        <a href="#admin-links">Administrative Links</a>
+    </div>
+    <div class="quick-access">
+        <h2>Quick access to all important college resources.</h2>
+        <div class="grid">
+            <div class="grid-item">Latest Exam Result</div>
+            <div class="grid-item">Class Timetable</div>
+            <div class="grid-item">Library Resources</div>
+            <div class="grid-item">Notices</div>
+        </div>
+    </div>
+    <div class="exam-results">
+        <h2>Exam Results</h2>
+        <div class="grid">
+            <div class="grid-item">Semester 1</div>
+            <div class="grid-item">Semester 2</div>
+            <div class="grid-item">Semester 3</div>
+            <div class="grid-item">Semester 4</div>
+            <div class="grid-item">Semester 5</div>
+            <div class="grid-item">Semester 6</div>
+            <div class="grid-item">Semester 7</div>
+        </div>
+    </div>
+    <div class="academic-resources">
+        <h2>Academic Resources</h2>
+        <div class="grid">
+            <div class="grid-item">Syllabus Downloads</div>
+            <div class="grid-item">Lecture Notes</div>
+            <div class="grid-item">Study Materials</div>
+        </div>
+    </div>
+</body>
+</html>
